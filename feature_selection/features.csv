@@ -1,0 +1,17 @@
+type
+category
+site
+phone
+booking_appointment_link
+range
+latitude
+longitude
+postal_code
+borough
+working_hours_old_format
+other_hours
+range
+photos_count
+reviews_per_score_1
+reviews_per_score_2
+reviews
