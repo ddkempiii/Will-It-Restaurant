@@ -69,4 +69,24 @@ tuning; its use on the test dataset returns a much higher RMSE of ~0.74.
 * __[`modeling_with_censusdata.ipynb`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/initial_modeling/modeling_with_censusdata.ipynb)__ gauges the possible impact of census predictors by using random forest and gradient boost regression, particularly for feature selection
 * __[`more_models_withclustering.ipynb`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/cluster_modeling/more_models_withclustering.ipynb)__ tests appropriate random forest and boost models on price level 1 restaurants, providing further evidence for clustering; begins clustering on 'West Philly' while introducing deconstruction
 * __[`clustering_westphilly.ipynb`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/cluster_modeling/clustering_westphilly.ipynb)__ finishes the clustering on west philly begun in the previous notebook, making first use of the DecCluster class from __[`cluster_fns.py`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/cluster_fns.py)__
-* __[
+* __[`clustering_nephilly.ipynb`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/cluster_modeling/clustering_nephilly.ipynb)__ accomplishes the clustering on NE Philly, also using DecCluster
+* __[`model_test.ipynb`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/model_test.ipynb)__ selects and validates the best models for the whole of the data, using the full training set and test set; an assessment of the efficacy of deconstruction is made at the end
+
+### Custom Classes:
+
+* __[`cluster_fns.py`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/cluster_fns.py)__ contains the function and class definitions needed to perform deconstruction on a given borough with corresponding data
+* __[`tree_helpers.py`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/tree_helpers.py)__ is a file written by Steven Gubkin, Ph.D., on behalf of the Erdős Data Science Boot Camp, which we use here to traverse classification decision trees and return all predictor constraints
+
+### CSV:
+
+* __[`train_data.csv`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/data_files/train_data.csv)__ is the training data
+* __[`test_data.csv`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/data_files/test_data.csv)__ is the test data
+* __[`census_tracts.csv`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/data_files/census_tracts.csv)__ presents the census tracts covering Philly returned by the US Census Bureau via geocoding
+* __[`census_data.csv`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/data_files/census_data.csv)__ is the desired census data associated to each tract
+* __[`train_data_with_census.csv`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/data_files/train_data_with_census.csv)__ is the training data with census tract number attached
+* __[`final_train_data.csv`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/data_files/final_train_data.csv)__ is the training data with full census data adjoined
+* __[`clusters.csv`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/cluster_modeling/clusters.csv)__ presents the information necessary for using DecCluster to construct the clusters derived on West Philly and NE Philly, with both model and feature specification
+* __[`features.csv`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/feature_selection/features.csv)__ is the list of initial features considered
+* __[`feature_importances.csv`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/feature_selection/feature_importances.csv)__ gives the random forest feature importances for geospatial, customer-interactive, and census predictors
+* __[`feature_importances_w_cuisine_types.csv`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/feature_selection/feature_importances_w_cuisine_types.csv)__ accomplishes the same task but with cuisine type included as well as a predictor
+* __[`final_features.csv`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/feature_selection/final_features.csv)__ selects the most important features from __[`feature_importances.csv`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/feature_selection/feature_importances.csv)__
