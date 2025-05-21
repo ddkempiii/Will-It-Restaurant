@@ -50,7 +50,7 @@ is returned for the test set ratings.
 We had some curiosity as to whether the categorical variables alone could locate the core statistical trends in the restaurant data. Indeed, the 'reviews' and
 'photos_count' predictors seemed to significantly affect the ratings distribution once they attained certain numeric thresholds. Similarly, it was speculated that
 certain areas, not large enough to be boroughs (perhaps just a few adjacent street blocks), may hold high-performing or perhaps drastically underwhelming restaurants.
-In an effort to gain hold of such scenarios, a manual form of clustering was also pioneered, called **deconstruction**. 'Deconstruction' should be interpreted as a greedy algorithm that takes a best performing model on a subset of data and uses its statistical predictions to locate a divergent smaller set. However, it is still in nascent form and needs fine
+In an effort to gain hold of such scenarios, a manual form of clustering was also pioneered, called **deconstruction**. 'Deconstruction' should be interpreted as a greedy algorithm that takes a best performing model on a subset of data and uses its statistical predictions to locate a divergent smaller set via decision tree classification. However, it is still in nascent form and needs fine
 tuning; its use on the test dataset returns a much higher RMSE of ~0.74.
 
 ## Files
