@@ -4,19 +4,16 @@
 
 Relied upon for sustenance, entertainment, and social venturing, restaurants play a vital role in any lively city. Yet, not all restaurants excel in their function, 
 or do so at varying degrees. Furthermore, the variety of consumer tastes is complex and not at all restricted merely to culinary considerations. Some customer 
-demographics can tolerate poorer food quality or flavor, for example, if the type of restaurant ambience (interior decor, music, furniture...) resonates with them, or 
-the customer service is affable and attentive. Or, maybe a large enough consumer base will cherish a certain restaurant because it is close to them while others
+demographics can tolerate poorer food quality or flavor, for example, if the type of restaurant ambience (interior decor, music, furniture...) resonates with them, or the customer service is affable and attentive. Or, maybe a large enough consumer base will cherish a certain restaurant because it is close to them while others
 find it easy to access. It is unreasonable that a single restaurant could cater to the whole, vast array of consumer preference; hence, the status quo is that a 
 typical restaurant will focus on just a certain set of consumer preferences. 
 
 In turn, for the hungry or outgoing consumer, making an effective choice among the vast collection of restaurants in their vicinity can be a daunting
 task, without help. Restaurant ratings, e.g. Google, Yelp, etc., have been devised as an aid here. Yet, it can be unclear what exactly they are communicating,
 since they are subjective judgments by customers. Indeed, reviews can be read individually to locate some rationale for each customer's restaurant rating, yet 
-some reviews are too brief for that or are maybe even left blank. In any case, it is a tedious and potentially unwieldy process to read through every restaurant review
-and aggregate the ratings into manifold patterns of consumer sentiment.
+some reviews are too brief for that or are maybe even left blank. In any case, it is a tedious and potentially unwieldy process to read through every restaurant review and aggregate the ratings into manifold patterns of consumer sentiment.
 
-Thus, the goal of this project is to find some objective basis for restaurant ratings. Using only elementary, measurable data, we investigate to what extent restaurant 
-ratings can be predicted.
+Thus, the goal of this project is to find some objective basis for restaurant ratings. Using only elementary, measurable data, we investigate to what extent restaurant ratings can be predicted.
 
 ## Data
 
