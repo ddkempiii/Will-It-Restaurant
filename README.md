@@ -21,10 +21,10 @@ The data pertains to a collection of 3787 restaurants in Philadelphia, PA, and w
 average star rating (a numerical value between 0.0 and 5.0 with one decimal place allowed). Many possible predictor variables are provided by Google Maps, but we 
 give special attention to the following: 'reviews' (the total number of customer reviews posted); 'photos_count' (the total number of photos posted by customers); 
 'latitude' and 'longitude'; 'range' (the restaurant's price range); 'type' (the type of cuisine); 'site' (the restaurant's website); 'phone' (its phone number);
-and 'borough'. There are other possible helpful variables, e.g. 'other_hours', 'about', 'description', 'popular_times', 'typical_time_spent', which were either returned 
+and 'borough'. There are other possibly helpful variables, e.g. 'other_hours', 'about', 'description', 'popular_times', 'typical_time_spent', which were either returned 
 entirely empty by Outscraper or are temporarily ignored here.
 
-We believe that local demographics are important part of the story behind restaurant ratings. So we also incorporate data from the 2021 US Census administered by
+We believe that local demographics are an important part of the story behind restaurant ratings. So we also incorporate data from the 2021 US Census administered by
 the American Community Survey for the census tracts covering Philadelphia. 
 
 ## Preprocessing
@@ -50,14 +50,14 @@ is returned for the test set ratings.
 We had some curiosity as to whether the categorical variables alone could locate the core statistical trends in the restaurant data. Indeed, the 'reviews' and
 'photos_count' predictors seemed to significantly affect the ratings distribution once they attained certain numeric thresholds. Similarly, it was speculated that
 certain areas, not large enough to be boroughs (perhaps just a few adjacent street blocks), may hold high-performing or perhaps drastically underwhelming restaurants.
-In an effort to gain hold of such scenarios, a manual form of clustering was also pioneered, called **deconstruction**. However, it is still in nascent form and need fine
+In an effort to gain hold of such scenarios, a manual form of clustering was also pioneered, called **deconstruction**. 'Deconstruction' should be interpreted as a greedy algorithm that takes a best performing model on a subset of data and uses its statistical predictions to locate a divergent smaller set. However, it is still in nascent form and needs fine
 tuning; its use on the test dataset returns a much higher RMSE of ~0.74.
 
 ## Files
 
 ### Notebooks:
 
-* __[`data_presentation:cleaning.ipynb`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/data_presentation%3Acleaning.ipynb)__ presents, cleans, and validates the data.
+* __[`data_presentation:cleaning.ipynb`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/data_presentation%3Acleaning.ipynb)__ presents, cleans, and validates the data
 * __[`data_exploration:plotanalysis.ipynb`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/data_exploration%3Aplotanalysis.ipynb)__ performs EDA on the training data and speculates about model candidates
 * __[`data-modeling1.ipynb`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/initial_modeling/data-modeling1.ipynb)__ tests various k-neighbors models
 * __[`data-modeling2(price_level1).ipynb`](https://github.com/ddkempiii/Will-It-Restaurant/blob/main/initial_modeling/data-modeling2(price_level1).ipynb)__ applies the same models to just price level 1 restaurants
